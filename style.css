@@ -1,0 +1,214 @@
+@charset "URL-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    ;
+    border: none;
+}
+
+body {
+    background-image: url(image-fundo.png);
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    
+}
+
+header {
+    width: auto;
+    height: 90px;
+    background-color: black;
+    backdrop-filter: blur(20px);
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: 0.3s;
+
+}
+
+
+main {
+    position: relative;
+    height: 100vw;
+    height: 100vh;
+    transition: 0.9s;
+
+}
+
+.button-criar-conta{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    opacity: 0.5;
+}
+
+.cards1  {
+    background-color: rgb(0, 0, 0);
+    height: 30vw;
+    width: 35vh;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards2 {
+    background-color: rgb(255, 255, 255);
+    height: 550px;
+    width: 550px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 63%;
+    left: 82%;
+    transform: translate(-60%, -71%);
+}
+
+
+.img-card {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.botao-comprar button {
+    width: 160px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 05px;
+    height: 40px;
+    background-color: white;
+}
+
+.botao-comprar button:hover {
+    background-color: rgb(180, 180, 180);
+
+}
+
+.faixa-container {
+    height: 90px;
+    gap: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-criar-conta {
+    display: flex;
+    justify-content: center;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 2px 6px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px -7px 7px black;
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+    font-size:larger 2px;
+
+}
+
+.faixa {
+    display: flex;
+    gap: 100px;
+}
+
+.faixa a:hover {
+    cursor: pointer;
+    font-size: 20px;
+    gap: 100px;
+}
+
+.pag {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+@media (max-width: 904px) {
+
+    header {
+        transition: 0.2s;
+        width: auto;
+    }
+
+    main {
+        margin: 0px;
+        padding: 0px 10px;
+        transition: 0.3s;
+        gap: 0;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        display: absolute;
+    }
+
+    .faixa-container {
+        gap: 0;
+    }
+
+    .cards {
+        width: 180px;
+        height: 190px;
+        gap: 100px;
+        display: flex;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    .container-cards {
+        width: 500px;
+        transition: 1s;
+        height: 500px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 220px 200px;
+        grid-template-rows: 200px 190px;
+        justify-content: center;
+
+    }
+
+}
